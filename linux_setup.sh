@@ -7,10 +7,8 @@ cd ~/Downloads
 wget https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64
 sudo apt install -y ./docker-desktop-amd64.deb
 sudo apt install yarn
-sudo apt install nvm
-sudo apt install gh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 systemctl enable docker-destkop
-gh auth login
 fi
 
 which dnf 
@@ -21,7 +19,6 @@ cd ~/Downloads
 wget https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64
 sudo dnf install -y ./docker-desktop-x86_64.rpm
 sudo dnf install yarn
-sudo dnf install gh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 systemctl enable docker-destkop
-gh auth login
 fi
