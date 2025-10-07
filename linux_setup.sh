@@ -11,7 +11,7 @@ sudo apt install nvm
 sudo apt install gh
 systemctl enable docker-destkop
 gh auth login
-endif
+fi
 
 which dnf 
 if [[ $? == 0 ]]; then
@@ -24,5 +24,4 @@ sudo dnf install yarn
 sudo dnf install gh
 systemctl enable docker-destkop
 gh auth login
-endif
-
+fi
