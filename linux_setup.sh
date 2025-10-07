@@ -1,6 +1,6 @@
 #!/bin/bash
 which apt 
-if [[ $? == 0 ]]; do
+if [[ $? == 0 ]]; then
 # for debian based distros
 sudo apt update
 cd ~/Downloads
@@ -14,7 +14,7 @@ gh auth login
 endif
 
 which dnf 
-if [[ $? == 0 ]]; do
+if [[ $? == 0 ]]; then
 # for fedora based distros
 sudo dnf update
 cd ~/Downloads
